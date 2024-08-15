@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Calculator.css';
-import calculate from '../logic/calculate'; // Adjust the path if necessary
+import calculate from '../logic/calculate';
 
-const Button = ({ value, className }) => (
-  <button type="button" className={className}>
+const Button = ({ value, className, onClick }) => (
+  <button type="button" className={className} onClick={onClick}>
     {value}
   </button>
 );
 
 Button.propTypes = {
-  value: PropTypes.string.isRequired,
-  className: PropTypes.string,
+  value: PropTypes.string.isRequired, // Validate 'value' prop
+  className: PropTypes.string, // Validate 'className' prop
+  onClick: PropTypes.func, // Validate 'onClick' prop
 };
 
 Button.defaultProps = {
   className: '',
+  onClick: () => {}, // Provide a default empty function
 };
 
 const Calculator = () => {
