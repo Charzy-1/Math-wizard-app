@@ -1,0 +1,46 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional: Set a background color for the page */
+}
+
+.calculator {
+  width: 450px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  background-color: #888;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: 1px solid #888;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+button.operator {
+  background-color: #f5913e;
+}
+
+button.zero {
+  grid-column: span 2;
+}
