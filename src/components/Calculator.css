@@ -1,7 +1,18 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional: Set a background color for the page */
+}
+
 .calculator {
   width: 450px;
   background-color: #f3f3f3;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .display {
