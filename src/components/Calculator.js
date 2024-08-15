@@ -1,11 +1,22 @@
-// src/components/Calculator.js
 import React from 'react';
+import PropTypes from 'prop-types'; // Import PropTypes
 import './Calculator.css';
 
+// Define the Button component with PropTypes validation and defaultProps
 const Button = ({ value, className }) => (
-  <button className={className}>{value}</button>
+  <button type="button" className={className}>{value}</button>
 );
 
+Button.propTypes = {
+  value: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
+
+Button.defaultProps = {
+  className: '', // Provide a default value for className
+};
+
+// Define the Calculator component
 const Calculator = () => (
   <div className="calculator">
     <div className="display">0</div>
