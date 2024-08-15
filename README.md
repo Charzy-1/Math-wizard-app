@@ -64,7 +64,7 @@
 
 To get a local copy up and running, follow these steps.
 Clone the project using the command:
-https://github.com/Charzy-1/MealDB-API-based-webapp.git
+https://github.com/Charzy-1/Math-wizard-app.git
 
 ### Prerequisites
 
@@ -85,21 +85,17 @@ Clone this repository to your desired folder:
 2. Navigate to the directory where you want clone the copy of this repository
 3. Create new directory [optional]
 4. Clone the repo using the below command
- > git clone https://github.com/Charzy-1/MealDB-API-based-webapp.git
+ > git clone https://github.com/Charzy-1/Math-wizard-app.git
 
 ### Usage
 
-This project can be used to learn and practice javascript ES6 and Webpack. More specifically;
+This project can be used to learn and practice React (JSX and Props). More specifically;
 * Building a dynamic websites and single page apps.
-* Use ES6 syntax, modules, callbacks and promises.
 * Use webpack.
-* Apply HTML, CSS and JavaScript best practices.
+* Apply JSX and prob best practices.
 * Write units tests for a JavaScript app.
 * Follow GitHub flow and Gitflow.
 * Solve git conflicts.
-* Use API documentation to send and receive data from an API.
-* Understand and use JSON.
-* Make JavaScript code asynchronous.
 * Perform a code review for a team member.
 
 ### Run tests
@@ -133,28 +129,16 @@ You can deploy this project using github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[popup]**
-- [ ] **[Comments]**
-- [ ] **[Description]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Charzy-1/MealDB-API-based-webapp/issues/).
+Feel free to check the [issues page](https://github.com/Charzy-1/Math-wizard-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
 
 If you like this project please give a ⭐️
 
@@ -170,16 +154,12 @@ If you like this project please give a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 -
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
