@@ -41,7 +41,7 @@ const Calculator = () => {
         <Button value="AC" className="operator" onClick={() => handleClick('AC')} />
         <Button value="+/-" className="operator" onClick={() => handleClick('+/-')} />
         <Button value="%" className="operator" onClick={() => handleClick('%')} />
-        <Button value="+" className="operator" onClick={() => handleClick('+')} />
+        <Button value="÷" className="operator" onClick={() => handleClick('÷')} />
         <Button value="7" onClick={() => handleClick('7')} />
         <Button value="8" onClick={() => handleClick('8')} />
         <Button value="9" onClick={() => handleClick('9')} />
