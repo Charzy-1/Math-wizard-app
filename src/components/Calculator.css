@@ -9,14 +9,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: #282c34;
 }
 
 .navbar-brand {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
-  color: white;
+  color: #f5913e;
 }
 
 .navbar-links {
@@ -32,7 +32,8 @@
 }
 
 .navbar-links a:hover {
-  text-decoration: underline;
+  background-color: #f5913e;
+  padding: 2.2rem;
 }
 
 .hamburger {
@@ -90,16 +91,15 @@
 .Home-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
   min-height: 100vh;
   width: 85vw;
   font-size: 2rem;
   font-weight: bold;
-  margin: 6rem;
+  margin: 3rem;
 }
 
-.Home-container p{
+.Home-container p {
   font-weight: normal;
   margin-top: 30px;
 }
@@ -152,18 +152,43 @@ button.zero {
   .navbar-links.active {
     display: flex;
     text-align: center;
+    padding: 20px;
   }
+
+  .navbar {
+    padding: 20px 40px;
+  }
+  
 
   .hamburger {
     display: flex;
   }
 
   .calculator {
-    width: 300px;
+    width: 304px;
+  }
+  .Quote-container {
+    margin: 2rem;
+    font-weight: normal;
+  }
+
+  .Home-container {
+    display: block;
+    margin: 2rem;
+  }
+
+  .Quote-container {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .Home-container p {
+    font-size: 1rem;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 380px) {
   .navbar-brand {
-  display: none;
+    display: none;
   }
 }
