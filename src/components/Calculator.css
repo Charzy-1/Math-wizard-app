@@ -1,11 +1,38 @@
-body,
-html {
+* {
   margin: 0;
-  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0; /* Optional: Set a background color for the page */
+  padding: 20px;
+  background-color: #282c34;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
 }
 
 .calculator {
@@ -44,4 +71,28 @@ button.operator {
 
 button.zero {
   grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #282c34;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  
+  .calculator {
+    width: 300px;
+  }
 }
