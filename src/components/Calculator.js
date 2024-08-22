@@ -13,8 +13,8 @@ const Button = ({ value, className = '', onClick = () => {} }) => (
 // Updated propTypes for Button component
 Button.propTypes = {
   value: PropTypes.string.isRequired, // Validate 'value' prop
-  className: PropTypes.string, // Validate 'className' prop
-  onClick: PropTypes.func, // Validate 'onClick' prop
+  className: PropTypes.string, // eslint-disable-line react/require-default-props
+  onClick: PropTypes.func, // eslint-disable-line react/require-default-props
 };
 
 const Calculator = () => {
@@ -35,7 +35,7 @@ const Calculator = () => {
     <div className="calculator-container">
       {/* Added a paragraph above the calculator with a heading */}
       <p className="calculator-heading">Let&apos;s do some maths!💪</p>
-      
+
       {/* Main calculator display and buttons */}
       <div className="calculator">
         <div className="display">
