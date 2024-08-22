@@ -1,22 +1,25 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom'; // Ensure this is imported
+import '@testing-library/jest-dom/extend-expect'; // for the toBeVisible matcher
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../Navbar';
-import { MemoryRouter } from 'react-router-dom';
 
 test('should toggle the menu when the hamburger is clicked', () => {
-  const { getByText, getByRole } = render(
-    <MemoryRouter>
+  const { getByLabelText, getByText } = render(
+    <Router>
       <Navbar />
-    </MemoryRouter>
+    </Router>
   );
 
-  const hamburger = getByRole('button', { name: /toggle menu/i });
+  const hamburger = getByLabelText('Toggle menu');
+  const homeLink = getByText('Home');
 
   // Before click, the menu should not be visible
-  expect(getByText('Home')).not.toBeVisible();
+  expect(homeLink).not.toBeVisible();
+
+  // Click the hamburger icon to toggle the menu
+  fireEvent.click(hamburger);
 
   // After click, the menu should be visible
-  fireEvent.click(hamburger);
-  expect(getByText('Home')).toBeVisible();
+  expect(homeLink).toBeVisible();
 });
