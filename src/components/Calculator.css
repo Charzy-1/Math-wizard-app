@@ -138,6 +138,10 @@ button.zero {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+  
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -154,8 +158,8 @@ button.zero {
     padding: 20px;
   }
 
-  .navbar {
-    padding: 20px 40px;
+  .navbar-brand {
+    font-size: 25px;
   }
 
   .hamburger {
